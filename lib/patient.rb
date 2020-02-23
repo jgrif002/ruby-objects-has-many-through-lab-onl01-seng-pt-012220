@@ -22,15 +22,11 @@ class Patient
             appointment.patient == self
         end
     end
-
-    #def doctors
-        #self.appointments.map do |appointment| 
-          #appointment.date
-        #end 
-    #end
     
     def doctors 
-      self.appointments.map {|appointment| appointment.doctor}
+      appointments.map do |appointment| 
+      appointment.doctor
+      end 
     end
 
 end 
