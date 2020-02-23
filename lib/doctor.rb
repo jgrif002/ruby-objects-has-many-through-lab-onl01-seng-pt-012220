@@ -25,5 +25,4 @@ class Doctor
    self.appointments.collect {|appt| appt.date}
  end
 
-
 end 
