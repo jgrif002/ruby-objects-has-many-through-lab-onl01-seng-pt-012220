@@ -23,10 +23,14 @@ class Patient
         end
     end
 
-    def doctors
-        self.appointments.map do |appointment| 
-          appointment.date
-        end 
+    #def doctors
+        #self.appointments.map do |appointment| 
+          #appointment.date
+        #end 
+    #end
+    
+    def doctors 
+      appointments.map {|appointment| appointment.doctor}
     end
 
 end 
